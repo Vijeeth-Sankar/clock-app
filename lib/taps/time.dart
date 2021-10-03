@@ -35,6 +35,7 @@ class _TimesState extends State<Times> {
   }
 }
 
+// ignore: camel_case_types
 class clockpainter extends CustomPainter {
   var dateTime = DateTime.now();
 
@@ -93,7 +94,9 @@ class clockpainter extends CustomPainter {
 
     canvas.drawCircle(center, 16, centerfillBrush);
 
+    // ignore: unused_local_variable
     var outCircleBrush = radius;
+    // ignore: unused_local_variable
     var innerCircleBrush = radius - 14;
     // var dashBrush = Paint()..color = Colors.black;
 
@@ -113,6 +116,7 @@ class clockpainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    // ignore: todo
     // TODO: implement shouldRepaint
     return true;
   }

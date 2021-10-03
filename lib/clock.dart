@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:time/date/Alarm.dart';
+import 'package:time/date/widgets.dart';
 import 'package:time/taps/clockmain.dart';
 
 class Clockwidget extends StatefulWidget {
@@ -14,7 +14,7 @@ class _ClockwidgetState extends State<Clockwidget> {
 
   final tabs = [
     ClockMain(),
-    Alarms(),
+    Alarm(),
   ];
 
   @override
@@ -27,11 +27,13 @@ class _ClockwidgetState extends State<Clockwidget> {
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.watch_later),
+              // ignore: deprecated_member_use
               title: Text('Clock'),
               backgroundColor: Colors.white,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.timer),
+              // ignore: deprecated_member_use
               title: Text('Timer'),
               backgroundColor: Colors.white,
             ),
